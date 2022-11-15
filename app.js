@@ -3,6 +3,8 @@ const path = require('path');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const Product = require('./models/product');
+const ejsMate = require("ejs-mate");
+const joi = require("joi");
 
 mongoose.connect('mongodb://localhost:27017/miniproject');
 
